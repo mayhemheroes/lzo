@@ -1,0 +1,8 @@
+project: lzo
+target: lzo_decompress_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/lzo_decompress_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/lzo_decompress_fuzzer
+    libfuzzer: true
